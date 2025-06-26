@@ -8,7 +8,10 @@ const app = express();
 
 // ✅ Middleware dulu
 app.use(cors({
-  origin: 'http://localhost:5173',
+  origin: [
+    'http://localhost:5173',
+    'https://blockchain-simulation-frontend-ttdm.vercel.app'
+  ],
   credentials: true
 }));
 
