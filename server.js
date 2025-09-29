@@ -10,7 +10,8 @@ const app = express();
 app.use(cors({
   origin: [
     'http://localhost:5173',
-    'https://blockchain-simulation-frontend-ttdm.vercel.app'
+    'https://blockchain-simulation-frontend-ttdm.vercel.app',
+    'https://blockchain-simulation-one.vercel.app/'
   ],
   credentials: true
 }));
